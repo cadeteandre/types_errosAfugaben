@@ -1,18 +1,18 @@
-type Alcohol = {
+export type TAlcohol = {
     name: string;
     percentage: number;
     type: string;
 }
 
-type Mixer = {
+export type TMixer = {
     name: string;
     type: string;
     carbonated: boolean;
 }
 
-type Cocktail = Alcohol & Mixer;
+export type TCocktail = TAlcohol & TMixer;
 
-const cocktail_1: Cocktail = {
+const cocktail_1: TCocktail = {
     name: 'Caipirinha',
     percentage: 48,
     type: 'Cocktail',
