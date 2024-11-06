@@ -1,7 +1,7 @@
-const generateLottoNumber = () => {
+const generateLottoNumber = (): number => {
     const lottoNumber: number = Math.round(Math.random() * 100) + 1;
     if(lottoNumber > 49) {
-        throw new Error('That number is less than 49')
+        throw new Error('That number is higher than 49')
     } else {
         return lottoNumber;
     }
